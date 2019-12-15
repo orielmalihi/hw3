@@ -22,19 +22,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: hw3.sort
+all: hw3
 
 # Tool invocations
-hw3.sort: $(OBJS) $(USER_OBJS)
+hw3: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "hw3.sort" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "hw3" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) hw3.sort
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) hw3
 	-@echo ' '
 
 .PHONY: all clean dependents

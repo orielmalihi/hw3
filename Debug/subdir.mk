@@ -5,15 +5,27 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../main1.c \
-../sorting.c 
+../main2.c \
+../sorting.c \
+../strings.c 
+
+O_SRCS += \
+../main1.o \
+../main2.o \
+../sorting.o \
+../strings.o 
 
 OBJS += \
 ./main1.o \
-./sorting.o 
+./main2.o \
+./sorting.o \
+./strings.o 
 
 C_DEPS += \
 ./main1.d \
-./sorting.d 
+./main2.d \
+./sorting.d \
+./strings.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
