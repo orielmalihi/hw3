@@ -20,6 +20,8 @@ int main(){
 //	printf("%s\n", w);
 	if(action == 'a')
 		print_lines(w);
+	else if(action == 'b')
+		print_similar_words(w);
 
 	return 0;
 }
