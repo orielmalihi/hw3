@@ -1,0 +1,1 @@
+sorting.o: ../sorting.c
