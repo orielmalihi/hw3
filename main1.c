@@ -9,14 +9,14 @@
 #define maxLen 50
 
 int main(){
-	printf("Please enter 50 numbers to sort\n");
 	int arr[50];
 	for(int i =0; i<maxLen; i++){
 		scanf(" %d", arr+i);
 	}
 	insertion_sort(arr, maxLen);
-	for(int i =0; i<maxLen; i++)
-		printf("%d ", *(arr+i));
+	for(int i =0; i<maxLen-1; i++)
+		printf("%d,", *(arr+i));
+	printf("%d", *(arr+maxLen-1));
 	printf("\n");
 
 	return 0;
